@@ -47,3 +47,12 @@ body {
 .keys:hover {
     transform: scale(.95);
 }
+.keysPressed {
+    transform: scale(.95);
+}
+.btn {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    cursor: crosshair;
+}
