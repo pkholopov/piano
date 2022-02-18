@@ -72,13 +72,12 @@ for (let note in notes){
 //Play sounds
 
 window.addEventListener('keydown', (e)=>{
-    console.log(e);
     const sound = document.querySelector('audio');
     let soundSource = keys[e.key][1];
     if (!soundSource){
         return;
     }
-    pressedKeyId = keys[e.key][0]
+    let pressedKeyId = keys[e.key][0]
     document.querySelector('#' + pressedKeyId).classList.add('keysPressed');
     sound.setAttribute('src', soundSource);
     sound.play();
